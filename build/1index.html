@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardano Pool Vetting</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='https://unicons.iconscout.com/release/v3.0.6/css/line.css'><link rel="stylesheet" href="./style.css">
+</head>
+<body>
+ 
+  
+<!-- Adding side bar -->
+<aside class="sidebar position-fixed top-0 left-0 overflow-auto h-100 float-left" id="show-side-navigation1">
+  <i class="uil-bars close-aside d-md-none d-lg-none" data-close="show-side-navigation1"></i>
+  <div class="sidebar-header d-flex justify-content-center align-items-center px-3 py-4">
+        <img
+            class="rounded-pill img-fluid"
+            width="60"
+            src="https://red-sky.one/wp-content/uploads/2022/01/enigma-small.png"
+            alt="">
+        <div class="ms-2">
+          <h5 class="fs-6 mb-0">
+          <a class="text-decoration-none" href="#">Enigma SPO</a>
+          </h5>
+          <p class="mt-1 mb-0">Ticker one</p>
+        </div>
+  </div>
+  <div class="search position-relative text-center px-4 py-3 mt-2">
+  </div>
+
+  <ul class="categories list-unstyled">
+    <li class="">
+      <i class="uil-estate fa-fw"></i><a href="https://red-sky.one/" target="_blank" rel="noopener noreferrer">Pool website</a>
+    </li>
+    <li class="">
+      <i class="uil-bag"></i><a href="https://cardano-solutions.com/stake?t=FWXCfYBP82NG9ObGKhh1Fsb3Gmk35u&wallet=yoroi,flint,nami,eternl,gerowallet" target="_blank" rel="noopener noreferrer">Stake with one click</a>
+    </li>
+    <li class="">
+      <i class="uil-estate fa-fw"></i><a href="https://cexplorer.io/pool/pool18qzks8vdf0yu0u5ccf8aaj35q6zfutdcfgrssuvdjmgtyykr922" target="_blank" rel="noopener noreferrer">View us on ADApool</a>
+    </li>
+    <li class="">
+      <i class="uil-estate fa-fw"></i><a href="https://pooltool.io/pool/3805681d8d4bc9c7f298c24fdeca3406849e2db84a0708718d96d0b2/epochs" target="_blank" rel="noopener noreferrer">View us on pooltools</a>
+    </li>
+  </ul>
+  
+
+</aside>
+<!-- End of side bar -->
+
+<!-- Main codes -->
+
+<section id="wrapper">
+  <nav class="navbar navbar-expand-md">
+      <div class="container-fluid mx-2">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">Vet<span class="main-color"> Cardano </span>Stake Pools</a>
+          <p class="navebar-text">See if Cardano pool that you are staking with is working or find out why it might not be!</p>
+        </div>
+      </div>
+    </nav>
+
+  <div class="p-4">
+      <br>
+      <div class="welcome">
+          <div class="content rounded-3 p-3">
+              <div class="container">
+                  <form id="search-form">
+                  <input type="text" id="search" class="searchInput" name="search-input" placeholder="Enter pool Ticker (tickers are k Sensitive for this search)">
+                   </form> 
+                  <br>
+                  <div class="frame">
+                    <p style="font-family: Andale Mono, monospace;">
+                      Please stake some ADA to support our pool | Pool name: Enigma | Ticker: ONE
+                    </p>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+<section class="charts mt-4">
+  <div class="chart-container p-3">
+      <h3 class="fs-6 mb-3">Pond of POOLS.</h3>
+      <div id="result" class="result">
+          <!-- Result will be displayed here -->
+      </div>
+      <div style="height: auto">
+          <canvas id="chart3" width="100%"></canvas>
+      </div>
+      
+  </div>
+</section>
+
+</section>
+
+<!-- scripts section -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.bundle.js'></script>
+<script src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.jshttps://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js'></script>
+<script src="script.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+<!-- scripts section -->
+</body>
+</html>
